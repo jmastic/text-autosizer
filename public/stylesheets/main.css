@@ -26,7 +26,7 @@ html, body {
 }
 .textbox {
   width:100%;
-  height:100%;
+  height:99vh;
   margin:0;
   padding:.5vw;
   white-space: pre;
