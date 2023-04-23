@@ -91,22 +91,17 @@
     // Now, let's try 3 columns
     const threeColFontSize = setThreeColumns(text);
 
-    console.log(oneColFontSize, twoColFontSize, threeColFontSize);
-
     // If 1 column has bigger text, use it
     if (oneColFontSize > twoColFontSize && oneColFontSize > threeColFontSize) {
-      console.log("prefer one");
       resetColumns();
       setOneColumn(text);
     }
     // 2 is going to be our "preferred" sizing
     if (twoColFontSize >= oneColFontSize && twoColFontSize >= threeColFontSize) {
-      console.log("prefer two");
       resetColumns();
       setTwoColumns(text);
     }
     if (threeColFontSize > oneColFontSize && threeColFontSize > twoColFontSize) {
-      console.log("prefer three");
       resetColumns();
       setThreeColumns(text);
     }
